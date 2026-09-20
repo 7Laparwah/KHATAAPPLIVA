@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><title>Wallet Statement — office Expence</title>
+<style>
+@page { size: A4; margin: 14mm 12mm; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; color: #1a1a1a; background: #f7f1e6; }
+.page { position: relative; min-height: 100vh; padding: 28px 32px 40px;
+  background: radial-gradient(circle at 50% 42%, rgba(212,175,110,0.07) 0%, transparent 55%), #f7f1e6; overflow: hidden; }
+.watermark { position: absolute; left: 50%; top: 48%; transform: translate(-50%,-50%); width: min(78%,420px); opacity: 0.14; pointer-events: none; z-index: 0; }
+.content { position: relative; z-index: 1; }
+.topbar { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+.lotus-corner { width: 36px; height: 36px; opacity: 0.55; }
+.temple { width: 92px; height: 72px; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+h1 { margin: 12px 0 4px; font-size: 22px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #1e293b; }
+.party-line { margin: 0 0 18px; font-size: 14px; color: #334155; }
+.party-line strong { color: #0f172a; }
+table { width: 100%; border-collapse: collapse; font-size: 11.5px; background: rgba(255,255,255,0.55); border-radius: 8px; overflow: hidden; }
+thead th { background: #1e4d8c; color: #fff; font-weight: 600; text-align: left; padding: 10px 8px; font-size: 11px; }
+thead th.c { text-align: center; width: 36px; }
+tbody td { padding: 8px; border-bottom: 1px solid #e8dfd0; vertical-align: top; }
+tbody tr:nth-child(even) td { background: rgba(255,252,247,0.7); }
+td.c { text-align: center; color: #64748b; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+td.note { color: #475569; max-width: 180px; }
+.totals { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 16px 28px; font-size: 13px; font-weight: 600; }
+.totals .label { color: #64748b; margin-right: 6px; }
+.totals .net { margin-left: auto; }
+.footer { margin-top: 28px; text-align: center; font-size: 11px; color: #94a3b8; }
+</style></head><body>
+<div class="page">
+<svg class="watermark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#c4a574" stroke-width="1.2">
+<circle cx="100" cy="100" r="12"/>
+<path d="M100 40 C110 70 110 70 100 100 C90 70 90 70 100 40Z"/>
+<path d="M100 160 C110 130 110 130 100 100 C90 130 90 130 100 160Z"/>
+<path d="M40 100 C70 90 70 90 100 100 C70 110 70 110 40 100Z"/>
+<path d="M160 100 C130 90 130 90 100 100 C130 110 130 110 160 100Z"/>
+<path d="M100 28 C118 55 130 75 100 100 C70 75 82 55 100 28Z"/>
+<path d="M100 172 C118 145 130 125 100 100 C70 125 82 145 100 172Z"/>
+</g></svg>
+<div class="content">
+<div class="topbar">
+<svg class="lotus-corner" viewBox="0 0 40 40"><g fill="none" stroke="#c4a574" stroke-width="1.4">
+<path d="M20 6 C24 14 24 14 20 22 C16 14 16 14 20 6Z"/>
+<path d="M8 18 C16 16 16 16 22 20 C16 22 16 22 8 18Z"/>
+<path d="M32 18 C24 16 24 16 18 20 C24 22 24 22 32 18Z"/>
+</g></svg>
+<svg class="temple" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+<rect width="120" height="90" rx="8" fill="#e8f4fc"/>
+<circle cx="95" cy="22" r="14" fill="#ffe9a8"/>
+<rect x="20" y="48" width="80" height="28" fill="#c4a882"/>
+<path d="M40 38 L60 12 L80 38 Z" fill="#c45c3a"/>
+<rect x="48" y="22" width="24" height="8" fill="#e8b86d"/>
+<rect x="52" y="14" width="16" height="8" fill="#d4a017"/>
+<rect x="52" y="55" width="16" height="21" fill="#5c4033"/>
+</svg>
+</div>
+<h1>Wallet Statement</h1>
+<p class="party-line">Party : <strong>office Expence</strong></p>
+<table>
+<thead><tr><th class="c">No.</th><th>Date</th><th>Party Name</th><th>Debit</th><th>Credit</th><th>Method</th><th>Note</th></tr></thead>
+<tbody>
+<tr><td class='c'>1</td><td>04/08/2026</td><td>office Expence</td><td class='num'>20</td><td class='num'></td><td>Cash</td><td class='note'>Chai namkin ke liye</td></tr>
+<tr><td class='c'>2</td><td>04/08/2026</td><td>office Expence</td><td class='num'>35</td><td class='num'></td><td>Cash</td><td class='note'>Chai bisket ke liye</td></tr>
+<tr><td class='c'>3</td><td>05/08/2026</td><td>office Expence</td><td class='num'>20</td><td class='num'></td><td>Cash</td><td class='note'></td></tr>
+<tr><td class='c'>4</td><td>06/08/2026</td><td>office Expence</td><td class='num'>20</td><td class='num'></td><td>Cash</td><td class='note'>chai ke liye pay kiye</td></tr>
+<tr><td class='c'>5</td><td>07/08/2026</td><td>office Expence</td><td class='num'>70</td><td class='num'></td><td>Cash</td><td class='note'>chai biscuit namkeen</td></tr>
+<tr><td class='c'>6</td><td>08/08/2026</td><td>office Expence</td><td class='num'>20</td><td class='num'></td><td>Cash</td><td class='note'>chai ke liye pay kiye</td></tr>
+<tr><td class='c'>7</td><td>10/08/2026</td><td>office Expence</td><td class='num'>50</td><td class='num'></td><td>Cash</td><td class='note'>Chai ke liye , 30 prince ne 1-8-26 ko diye</td></tr>
+<tr><td class='c'>8</td><td>12/08/2026</td><td>office Expence</td><td class='num'>20</td><td class='num'></td><td>Cash</td><td class='note'>chai ke liye diye</td></tr>
+<tr><td class='c'>9</td><td>13/08/2026</td><td>office Expence</td><td class='num'>20</td><td class='num'></td><td>Cash</td><td class='note'>chai ke liye diye</td></tr>
+<tr><td class='c'>10</td><td>14/08/2026</td><td>office Expence</td><td class='num'></td><td class='num'>150</td><td>Cash</td><td class='note'>Chai ke paise mile</td></tr>
+<tr><td class='c'>11</td><td>14/08/2026</td><td>office Expence</td><td class='num'>30</td><td class='num'></td><td>Cash</td><td class='note'>Chai bisket namkin</td></tr>
+<tr><td class='c'>12</td><td>17/08/2026</td><td>office Expence</td><td class='num'>50</td><td class='num'></td><td>Cash</td><td class='note'>chai ke liye</td></tr>
+<tr><td class='c'>13</td><td>18/08/2026</td><td>office Expence</td><td class='num'>50</td><td class='num'></td><td>Cash</td><td class='note'>Chai ke liye pay kiye</td></tr>
+<tr><td class='c'>14</td><td>19/08/2026</td><td>office Expence</td><td class='num'>20</td><td class='num'></td><td>Cash</td><td class='note'>chai bisket ke liye pe kiye</td></tr>
+<tr><td class='c'>15</td><td>20/08/2026</td><td>office Expence</td><td class='num'>20</td><td class='num'></td><td>Cash</td><td class='note'>Chai bisket ke liye</td></tr>
+<tr><td class='c'>16</td><td>21/08/2026</td><td>office Expence</td><td class='num'>20</td><td class='num'></td><td>Cash</td><td class='note'>chai biscuit namkeen ke liye pay kiye</td></tr>
+<tr><td class='c'>17</td><td>22/08/2026</td><td>office Expence</td><td class='num'>25</td><td class='num'></td><td>Cash</td><td class='note'>chai biscuit namkeen ke liye pay kiye</td></tr>
+<tr><td class='c'>18</td><td>24/08/2026</td><td>office Expence</td><td class='num'>20</td><td class='num'></td><td>Cash</td><td class='note'>chai ke liye pay kiye</td></tr>
+<tr><td class='c'>19</td><td>25/08/2026</td><td>office Expence</td><td class='num'>20</td><td class='num'></td><td>Cash</td><td class='note'>chai ke liye pay kiye</td></tr>
+<tr><td class='c'>20</td><td>26/08/2026</td><td>office Expence</td><td class='num'>30</td><td class='num'></td><td>Cash</td><td class='note'>chai biscuit ke liye pay kiye</td></tr>
+<tr><td class='c'>21</td><td>27/08/2026</td><td>office Expence</td><td class='num'>30</td><td class='num'></td><td>Cash</td><td class='note'>chai biscuit namkeen ke liye pay kiye</td></tr>
+<tr><td class='c'>22</td><td>02/09/2026</td><td>office Expence</td><td class='num'>25</td><td class='num'></td><td>Cash</td><td class='note'>chai biscuit namkeen ke liye pay kiye</td></tr>
+
+</tbody></table>
+<div class="totals">
+<div><span class="label">TOTAL</span> Debit 755 &nbsp; Credit 150</div>
+<div class="net"><span class="label">NET BALANCE</span> - Rs. 605</div>
+</div>
+<p class="footer">Generated on 15/09/2026</p>
+</div></div>
+</body></html>
